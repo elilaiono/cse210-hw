@@ -1,6 +1,7 @@
 
 public class Scripture
 {
+    // use private strings
     private string reference;
     private string text;
     private string[] hiddenWords;

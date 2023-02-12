@@ -1,5 +1,6 @@
 public class ScriptureCollection
 {
+    // use private variables
     private Scripture[] scriptures;
     private Random random = new Random();
 
