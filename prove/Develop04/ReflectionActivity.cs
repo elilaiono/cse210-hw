@@ -1,0 +1,36 @@
+// Reflection activity class
+class ReflectionActivity : Activity {
+    private string[] prompts = {
+        "Think of a time when you stood up for someone else.",
+        // "Think of a time when you did something really difficult.",
+        // "Think of a time when you helped someone in need.",
+        // "Think of a time when you did something truly selfless."
+    };
+    private string[] questions = {
+        "Why was this experience meaningful to you?"
+        // "Have you ever done anything like this before?",
+        // "How did you get started?",
+        // "How did you feel when it was complete?",
+        // "What made this time different than other times when you were not as successful?",
+        // "What is your favorite thing about this experience?",
+        // "What could you learn from this experience that applies to other situations?",
+        // "What did you learn about yourself through this experience?",
+        // "How can you keep this experience in mind in the future?"
+    };
+
+   public ReflectionActivity() : base() {}
+
+// Constructor for the reflection activity
+public void Run() {
+    DisplayStartingMessage("Reflection", "This activity will help you reflect on a positive experience and explore its significance. Take your time and think deeply about your answers to the prompts and questions.");
+    for (int i = 0; i < prompts.Length; i++) {
+        Console.WriteLine(prompts[i]);
+        Console.ReadLine();
+        for (int j = 0; j < questions.Length; j++) {
+            Console.WriteLine(questions[j]);
+            PauseWithSpinner(2);
+        }
+    }
+    DisplayEndingMessage("Reflection");
+}
+}
