@@ -4,10 +4,9 @@ class Customer
     public string Name { get; }
     public string PhoneNumber { get; }
 
-    public Customer(string name, string phoneNumber)
+    public Customer(string name)
     {
         Name = name;
-        PhoneNumber = phoneNumber;
         _orderHistory = new List<Order>();
     }
 
@@ -18,6 +17,6 @@ class Customer
 
     public override string ToString()
     {
-        return $"{Name} ({PhoneNumber})";
+        return $"{Name}";
     }
 }
